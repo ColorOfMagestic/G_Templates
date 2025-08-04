@@ -1,0 +1,46 @@
+{
+	"name": "myproject",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dev": "gulp"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@babel/core": "^7.24.6",
+		"@babel/preset-env": "^7.24.6",
+		"connect-php": "^0.0.2",
+		"gulp-connect-php": "^1.0.3",
+		"gulp-cssimport": "^7.0.0",
+		"gulp-htmlhint": "^4.0.2",
+		"gulp-htmlmin": "^5.0.1",
+		"gulp-if": "^3.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-uncss": "^1.0.6",
+		"gulp-webp-html": "^1.0.2"
+	},
+	"devDependencies": {
+		"@fullhuman/postcss-purgecss": "^7.0.2",
+		"autoprefixer": "^10.4.19",
+		"browser-sync": "^3.0.3",
+		"del": "^7.1.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^9.0.0",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-debug": "^5.0.1",
+		"gulp-file-include": "^2.3.0",
+		"gulp-imagemin": "^9.1.0",
+		"gulp-newer": "^1.4.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-postcss": "^10.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-terser": "^2.1.0",
+		"gulp-webp": "^5.0.0",
+		"postcss": "^8.4.39",
+		"sass": "^1.80.6",
+		"tailwindcss": "^3.4.14"
+	},
+	"keywords": [],
+	"description": ""
+}

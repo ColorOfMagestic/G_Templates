@@ -1,0 +1,23 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L,QSA]
+
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow"
+</IfModule>
+
+<IfModule mod_setenvif.c>
+  SetEnvIfNoCase User-Agent "Googlebot" search_robot
+  SetEnvIfNoCase User-Agent "Yandex" search_robot
+  SetEnvIfNoCase User-Agent "Bingbot" search_robot
+</IfModule>
+
+<IfModule mod_authz_core.c>
+  <RequireAll>
+    Require all granted
+    Require not env search_robot
+  </RequireAll>
+</IfModule>

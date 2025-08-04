@@ -1,0 +1,52 @@
+
+body {
+	font-family: sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	background: #ffffff;
+}
+
+.lottery-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+}
+
+.lottery-card {
+	background: linear-gradient(to right, #3ade53, #2cbf44);
+	color: white;
+	border-radius: 16px;
+	padding: 20px;
+	width: 160px;
+	text-align: center;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease;
+}
+
+.lottery-card:hover {
+	transform: scale(1.03);
+}
+
+.lottery-card img {
+	height: 50px;
+	margin-bottom: 12px;
+}
+
+.jackpot {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+.countdown {
+	font-size: 14px;
+	margin-top: 8px;
+}
+
+.note {
+	margin-top: 25px;
+	font-size: 13px;
+	color: #555;
+	text-align: center;
+}
