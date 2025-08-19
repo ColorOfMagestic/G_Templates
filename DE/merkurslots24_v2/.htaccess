@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Если запрашивается существующий файл или папка — пропустить
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Перезаписать URL без расширения на .php
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L,QSA]
